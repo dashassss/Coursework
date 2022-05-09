@@ -1,0 +1,931 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #c2dde4;
+}
+
+header {
+  padding: 0 30px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  background-color: #003a44;
+}
+
+.toplogo {
+  padding: 7px 0 0px;
+  height: 65px;
+}
+
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top_menu li {
+  padding: 10px 0 0 0;
+  display: inline-block;
+}
+
+.top_menu a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Square Peg", cursive;
+  text-transform: uppercase;
+  color: #66a4ac;
+  letter-spacing: 2px;
+  padding: 0px 18px 0 5px;
+}
+
+.top_menu a:hover {
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 150px;
+}
+
+#menu__toggle {
+  display: none;
+}
+
+.cont-osnova {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.cont-osnova h1 {
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+  padding-left: 50px;
+}
+
+.cont-osnova p {
+  display: inline-block;
+  width: 70%;
+  color: #06565b;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: "Square Peg", cursive;
+  padding-left: 50px;
+}
+
+.cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slideshow {
+  right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.slideshow-item {
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: slideanim 40s infinite;
+          animation: slideanim 40s infinite;
+  pointer-events: none;
+}
+
+.slideshow-item img {
+  width: 300px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation: zoom 40s infinite;
+          animation: zoom 40s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+
+.button {
+  display: inline-block;
+  background: #06565b;
+  color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  font-family: "Square Peg", cursive;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 200;
+  width: 170px;
+  margin-left: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #395870;
+  -webkit-box-shadow: inset 0 0 0 1px #3a7999;
+          box-shadow: inset 0 0 0 1px #3a7999;
+}
+
+theatreInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 150px;
+}
+
+theatreInformation h1 {
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+  text-align: center;
+}
+
+btheatre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 38%;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+btheatre h2 {
+  color: #06565b;
+  padding-left: 50px;
+  font-family: "Square Peg", cursive;
+}
+
+btheatre p {
+  color: #06565b;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: "Square Peg", cursive;
+  padding-left: 50px;
+}
+
+.but {
+  display: inline-block;
+  background: #06565b;
+  color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  font-family: "Square Peg", cursive;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 200;
+  width: 170px;
+  margin-left: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.but:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #395870;
+  -webkit-box-shadow: inset 0 0 0 1px #3a7999;
+          box-shadow: inset 0 0 0 1px #3a7999;
+}
+
+numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+numbers h3 {
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+}
+
+numbers img {
+  width: 50px;
+  height: 60px;
+}
+
+numbers p {
+  font-weight: bold;
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+}
+
+theatre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 80px;
+}
+
+.teatr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teatr img {
+  width: 447px;
+  height: 298px;
+}
+
+.container-afisha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.container-afisha h1 {
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+  text-align: center;
+}
+
+.cont_afisha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.perfomance_one, .perfomance_two, .perfomance_three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.perfomance_one img, .perfomance_two img, .perfomance_three img {
+  width: 375px;
+  height: 250px;
+}
+
+.hover-effect-cover {
+  list-style: none;
+  margin: 0 auto;
+  width: 375px;
+  text-align: center;
+  padding: 0;
+}
+
+.hover-effect-cover li {
+  position: relative;
+  height: 250px;
+  width: 375px;
+  /* Задаем ширину элемента списка с картинкой*/
+  display: inline-block;
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Заголовок, текст и ссылка */
+.hover-effect-cover li h3 {
+  color: #fff;
+  margin: 5px;
+  font-family: "Square Peg", cursive;
+}
+
+.hover-effect-cover li p {
+  color: #fff;
+  font-family: "Square Peg", cursive;
+  margin: 5px;
+}
+
+.hover-effect-cover li a {
+  font-family: "Square Peg", cursive;
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hover-effect-cover li a:hover {
+  background: #454545;
+  color: #fff;
+}
+
+/* Выезжающий блок с текстом для панели слева направо */
+.hover-effect-cover li > div.effect-to-right {
+  width: 375px;
+  height: 250px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hover-effect-cover li:hover > div.effect-to-right {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hover-effect-cover li div.effect-to-right {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Фон блока при наведении */
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  -webkit-transform: translate(-250px, 0px) rotate(0deg);
+      -ms-transform: translate(-250px, 0px) rotate(0deg);
+          transform: translate(-250px, 0px) rotate(0deg);
+  /* Направление выезжающей панели */
+}
+
+.hover-effect-cover li:hover div.effect-to-right {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px) rotate(0deg);
+      -ms-transform: translate(0px, 0px) rotate(0deg);
+          transform: translate(0px, 0px) rotate(0deg);
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form h3 {
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+  overflow: hidden;
+}
+
+.mailing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  padding-left: 50px;
+}
+
+.mailing h1 {
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+}
+
+.mailing p {
+  font-size: 20px;
+  color: #06565b;
+  font-family: "Square Peg", cursive;
+}
+
+.mail {
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mail section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+
+.mail section h3 {
+  display: inline;
+}
+
+label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #c6c7cc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #636466;
+  padding: 5px;
+}
+
+.butt button {
+  width: 250px;
+  margin-top: 20px;
+  border: none;
+  background: #003a44;
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.butt button:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #395870;
+  -webkit-box-shadow: inset 0 0 0 1px #3a7999;
+          box-shadow: inset 0 0 0 1px #3a7999;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #003a44;
+  height: 270px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left p {
+  color: #c2dde4;
+  font-family: "Square Peg", cursive;
+  font-size: 12px;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right p {
+  color: #c2dde4;
+  font-family: "Square Peg", cursive;
+  font-size: 12px;
+}
+
+.right img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1000px) {
+  /* скрываем чекбокс */
+  #menu__toggle {
+    display: block;
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: 3;
+  }
+  .menu__btn > span::before {
+    z-index: 2;
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    visibility: hidden;
+    z-index: 2;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #06565b;
+    -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    margin: 12px 0 12px 0;
+    padding: 12px 24px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    z-index: 3;
+    top: 0;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    -webkit-transition-duration: .25s;
+         -o-transition-duration: .25s;
+            transition-duration: .25s;
+    z-index: 3;
+  }
+  .menu__box {
+    -webkit-transition-duration: .25s;
+         -o-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .menu__item {
+    -webkit-transition-duration: .25s;
+         -o-transition-duration: .25s;
+            transition-duration: .25s;
+  }
+  .toplogo {
+    height: 50px;
+    padding: 10px 0 0px;
+  }
+  .wrapper {
+    gap: 20px;
+  }
+  .cont {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cont-osnova {
+    width: 90%;
+  }
+  .cont-osnova p {
+    text-align: justify;
+  }
+  .slideshow {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10%;
+    margin-left: 2%;
+  }
+  btheatre {
+    width: 50%;
+  }
+  btheatre h1 {
+    padding: 0;
+  }
+  btheatre p {
+    padding: 0;
+    text-align: justify;
+  }
+  .perfomance {
+    gap: 20px;
+  }
+  .mailing p {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+
+@-webkit-keyframes slideanim {
+  12.5% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  25% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  37.5% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideanim {
+  12.5% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  25% {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  37.5% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes zoom {
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@keyframes zoom {
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@media (max-width: 550px) {
+  .mail {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  input {
+    width: 100px;
+  }
+  .butt button {
+    width: 100px;
+  }
+  theatreInformation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cont {
+    width: 97%;
+  }
+  theatre {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .left p {
+    font-size: 9px;
+  }
+  .right p {
+    font-size: 9px;
+  }
+  .right img {
+    width: 10px;
+    height: 10px;
+  }
+  btheatre {
+    width: 95%;
+  }
+  .teatr {
+    padding-top: 0;
+  }
+  .teatr img {
+    width: 290px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 370px) {
+  footer {
+    height: 380px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slideshow {
+    left: 20px;
+  }
+  .hover-effect-cover img {
+    width: 250px;
+    height: 170px;
+    border-radius: 10px;
+  }
+  .hover-effect-cover li {
+    width: 250px;
+    height: 170px;
+    border-radius: 10px;
+  }
+  .cont_afisha {
+    gap: 5px;
+  }
+  .hover-effect-cover li > div.effect-to-right {
+    width: 250px;
+    height: 170px;
+    border-radius: 10px;
+  }
+}
